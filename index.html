@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="/style.css">
+    <title>Agenda Pastoral</title>
+</head>
+<body>
+ <header>
+    <div class="header-container">
+    <div class="header-logo" ><img src="/img/logoagenda.webp" alt="Logotipo Agenda Pastoral"></div>
+    <div>
+        <h1 class="header-title">Agenda Pastoral</h1>
+    </div>
+    </div>
+ </header>
+    <section class="prayer-requests">
+      <h1 class="prayer-requests-title" >Pedidos</h1>
+        <form action="/enviar-email" method="POST" id="formulario">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Nome">
+<label for="tel"></label>
+            <input type="tel" id="tel" name="tel" placeholder="Telefone">
+    
+            <label for="pedido"></label>
+<select name="pedidos" id="pedidos">
+    <option value="">Pedidos</option>
+    <option value="Oração">Oração</option>
+    <option value="Visita">Visita</option>
+    <option value="Aconselhamento">Aconselhamento</option>
+    <option value="Outros">Outros</option>
+</select>
+<label for="message"></label>
+            <textarea id="message" rows="8" name="message" placeholder="Escreva seu pedido..."></textarea>
+            <input type="submit" value="Enviar">                    
+        </form>
+    </section>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
